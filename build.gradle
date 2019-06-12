@@ -68,14 +68,14 @@ task buildre {
             println 'buildre'
         }
     }
-task test {
-        dependsOn '::build'
+task testre {
+        dependsOn '::buildre'
         doLast {
             println 'test'
         }
     }
 task hello {
-        dependsOn '::test'
+        dependsOn '::testre'
         doLast {
             println 'hello'
         }
