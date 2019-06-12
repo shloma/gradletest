@@ -63,9 +63,9 @@ task wrappertask(type: Wrapper) {
 }
 // end::wrapper[]
 
-task build {
+task buildre {
         doLast {
-            println 'build'
+            println 'buildre'
         }
     }
 task test {
